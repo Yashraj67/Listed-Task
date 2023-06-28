@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.cardview.widget.CardView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/list_item_img"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:src="@drawable/img"
+                    android:layout_marginLeft="10dp"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.4"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/list_item_sampleLink"
+                        android:layout_width="wrap_content"
+                        android:layout_height="18dp"
+                        android:text="Sample link name..."
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="12dp"/>
+                    <TextView
+                        android:id="@+id/list_item_date"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="12 Aug 2023"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/figtree_regular"
+                        android:layout_marginLeft="12dp"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/list_item_clicks"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="2300"
+                        android:layout_gravity="center"
+                        android:textSize="14sp"
+                        android:textColor="@color/black"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Clicks"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/figtree_regular"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="58dp"
+                android:background="#E8F1FF"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/list_item_web_link"
+                    android:layout_width="230dp"
+                    android:layout_height="15dp"
+                    android:text="https://samplelink.oia.bio/ashd..."
+                    android:textSize="14sp"
+                    android:textColor="#0E6FFF"
+                    android:fontFamily="@font/figtree_regular"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="12dp"/>
+
+                <ImageView
+                    android:id="@+id/list_item_copy"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_copy_btn"
+                    android:layout_marginTop="14dp"
+                    android:clickable="true"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="40dp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

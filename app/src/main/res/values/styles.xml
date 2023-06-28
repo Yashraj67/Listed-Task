@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CustomHorizontalScrollView" parent="android:style/Widget.Holo.ScrollView">
+        <item name="android:scrollbars">none</item>
+    </style>
+</resources>

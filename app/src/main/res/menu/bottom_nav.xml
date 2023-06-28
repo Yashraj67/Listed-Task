@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/btLinks"
+        android:title="Links"
+        android:icon="@drawable/ic_links"
+        />
+    <item
+        android:id="@+id/btCourses"
+        android:title="Courses"
+        android:icon="@drawable/ic_courses"
+        />
+    <item
+        android:id="@+id/btAdd"
+        android:title=""
+
+        />
+    <item
+        android:id="@+id/btCampaigns"
+        android:title="Campaigns"
+        android:icon="@drawable/ic_campaigns"
+        />
+    <item
+        android:id="@+id/btProfile"
+        android:title="Profile"
+        android:icon="@drawable/ic_profile"
+        />
+</menu>
